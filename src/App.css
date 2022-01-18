@@ -1,0 +1,162 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo > span {
+  display: flex;
+  align-items: center;
+}
+
+.head_container{
+  background: url('./images/center_bg_landing_header.svg') var(--purple) no-repeat;
+  background-position: bottom;
+  color: #fff;
+}
+
+.header_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub_container{
+  text-align: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+.hangout{
+  background: var(--off-white);
+}
+
+.reliable{
+  text-align: center;
+  background: var(--off-white);
+}
+
+.footer{
+  background: var(--footer);
+  color: var(--white);
+}
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+}
+
+.place > h4{
+  color: var(--purple);
+}
+
+.product > li:first-child,
+.company > li:first-child,
+.resources > li:first-child,
+.policy > li:first-child
+{
+  color: var(--purple);
+}
+
+.line{
+  background: var(--purple);
+  width: 100%;
+  height: 1px;
+}
+
+.bottom_nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom_nav > p{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+
+  .header_nav, .btn{
+      display: none;
+  }
+
+  .image_2{
+      display: none;
+  }
+
+  .header_nav_mobile{
+      position: relative;
+  }
+
+  .menu{
+      background: var(--white);
+      color: var(--purple);
+      text-align: center;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      margin-top: 1rem;
+      min-width: 90vw;
+  }
+
+  .hangout{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .header_nav_mobile{
+      display: none;
+  }
+
+  .images{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10vw;
+  }
+
+  .image_1, .image_2{
+      width: 40vw;
+  }
+
+  .invite{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .invite > img {
+      max-width: 40vw;
+  }
+
+  .hangout{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .hangout > img{
+      max-width: 40vw;
+  }
+
+  .fandom{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .fandom > img{
+      max-width: 40vw;
+  }
+}
