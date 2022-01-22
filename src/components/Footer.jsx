@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import flag from "../images/flag.png"
 import logo from "../images/discord_logo_white.svg";
 import { FaChevronDown, FaTwitter, FaInstagram, FaFacebookSquare, FaYoutube } from "react-icons/fa"
@@ -53,7 +54,11 @@ const Footer = () => {
             <div className="line"></div>
             <div className="bottom_nav">
                 <p><img src={logo} alt="discord logo" aria-hidden="true" />Discord</p>
-                <button type="submit">Sign Up</button>
+                <button type="submit">
+                    <Link to="/register">
+                        Sign Up
+                    </Link>
+                </button>
             </div>
         </div>
     )
