@@ -162,3 +162,21 @@ li{
       max-width: 40vw;
   }
 }
+
+/* Login and Register page design */
+
+.login{
+  background: url(./images/login_bg.svg) no-repeat;
+  background-size: 100vw 100vh;
+  color: var(--white);
+}
+
+.box{
+  background: var(--login);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: auto;
+  width: 50%;
+}
